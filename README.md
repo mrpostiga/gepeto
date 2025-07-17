@@ -89,7 +89,11 @@ Se queres contribuir:
 ## 🧠 Autor e Licença
 
 **Autor**: Helder Lopes  
-**Licença**: MIT (excepto datasets de terceiros, sujeitos às suas próprias licenças)  
+**Licença**: MIT (excepto datasets, sujeitos às suas próprias licenças)
+
+⚠️ **Os datasets completos usados para treinar a AlbertinaLLM são privados.**  
+Apenas amostras representativas são incluídas para demonstração da estrutura.
+
 
 ---
 
