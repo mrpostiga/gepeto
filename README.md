@@ -1,11 +1,9 @@
-````
 # 🇵🇹 GEPETO
 
 Modelos e ferramentas de Inteligência Artificial afinados para o **Português Europeu** (pt-PT) — criados à unha, sem tretas.
 
 > **“Não sabes? Pergunta ao Gepeto.”**
 
----
 
 ## 🎯 Objectivos do Projeto
 
