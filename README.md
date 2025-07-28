@@ -1,100 +1,104 @@
-# 🇵🇹 GEPETO  
-Modelos e ferramentas de Inteligência Artificial afinadas para o **Português Europeu** (pt-PT)
+````
+# 🇵🇹 GEPETO
+
+Modelos e ferramentas de Inteligência Artificial afinados para o **Português Europeu** (pt-PT) — criados à unha, sem tretas.
+
+> **“Não sabes? Pergunta ao Gepeto.”**
 
 ---
 
-## 🎯 Objectivos do Projecto
+## 🎯 Objectivos do Projeto
 
-GEPETO é uma LLM cuidadosamente construída com o propósito de:
+**GEPETO** é uma LLM concebida com foco absoluto na variante portuguesa da língua, orientada para:
 
-- Suporte nativo e exclusivo para **Português Europeu (pt-PT)**  
-- Capacidade bilingue limitada a **Português (pt-PT)** e **Inglês (EN)**
-- Eliminação total de conteúdos em **Português do Brasil (pt-BR)**
-- Geração de instruções, respostas e código com clareza, utilidade e rigor linguístico
-- Aplicação prática em tarefas como:
-  - Tradução pt-EN
-  - Compreensão de instruções
-  - Geração de SQL e código
-  - Parsing inteligente de documentos (ex: faturas, PDFs)
-  - Suporte offline com modelos locais (quantizados)
+- Suporte **nativo e exclusivo** para **Português Europeu (pt‑PT)**
+- Capacidade bilingue limitada: apenas **Português (pt‑PT)** e **Inglês formal (EN‑GB)**
+- Eliminação total de interferência do **Português do Brasil (pt‑BR)**
+- Geração de texto, código e instruções com **clareza, precisão técnica e estilo tuga**
+- Aplicação em tarefas práticas como:
+  - Tradução pt‑EN
+  - Compreensão de instruções complexas
+  - Geração de SQL e scripts técnicos
+  - Parsing de documentos (faturas, PDFs, tabelas fiscais)
+  - Execução **offline** com modelos locais (quantizados)
 
 ---
 
-## 📜 Regras do Projecto
+## 📜 Regras do Projeto
 
 ### ✅ Permitido
 
-- Línguas suportadas: **Português Europeu** e **Inglês**
-- Datasets curados manualmente ou validados automaticamente com assistente pt-PT
-- Dados em formato **Parquet** para maximizar performance de I/O e treino
-- Datasets de código, desde que:
-  - Comentados em pt-PT ou inglês formal (EN-GB)
+- Dados em **pt‑PT** ou **EN‑GB**, curados manualmente ou com validação assistida
+- Datasets em `.parquet` para I/O otimizado
+- Conteúdo de código:
+  - Comentado em português europeu ou inglês formal
   - Com boas práticas modernas
-  - Limpos de exemplos obsoletos
+  - Sem lixo legado ou exemplos desatualizados
 
 ### ❌ Proibido
 
-- Qualquer dataset em **português do Brasil**
-- Conteúdo com vocabulário, expressões, instruções ou sintaxe típicas de pt-BR
-- Datasets não curados ou traduzidos automaticamente sem verificação
+- Qualquer conteúdo em **português do Brasil**
+- Expressões, instruções ou sintaxe com traços de pt‑BR
+- Datasets traduzidos automaticamente sem validação rigorosa
 
 ---
 
-## 📦 Formato e Organização dos Dados
+## 📦 Estrutura dos Dados
 
-- Todos os datasets são convertidos para **`.parquet`**  
-- A estrutura dos datasets segue o formato:
-  - `instruction` – a tarefa ou comando
-  - `input` – conteúdo adicional (opcional)
-  - `output` – resposta esperada
-- Dados são armazenados em diretórios como:
-  - `/datasets/alpaca_ptpt_clean.parquet`
-  - `/datasets/codigo/`
-  - `/datasets/curados_manual/`
+Todos os datasets seguem o formato **instruction-style**:
 
----
+- `instruction`: comando ou pergunta
+- `input`: (opcional) conteúdo auxiliar
+- `output`: resposta esperada
 
-## ⚙️ Estado do Projecto
-
-- [x] Tradução completa do dataset **Alpaca cleaned** (validação manual)
-- [x] Tradução em curso do dataset **GPT-4 Self Instruct DE → pt-PT**
-- [ ] Integração de capacidade de geração SQL
-- [ ] Quantização para execução local (GGUF int3 / int4)
-- [ ] Criação de tokenizer próprio para português europeu
+Organizados por diretório:
+```plaintext
+/datasets/alpaca_ptpt_clean.parquet
+/datasets/codigo/
+/datasets/curados_manual/
+````
 
 ---
 
-## 📚 Tecnologias Utilizadas
+## ⚙️ Estado do Projeto
 
-- Python (Pandas, PyArrow, TQDM)
-- OpenLLM / Transformers
-- FastAPI (para UI auxiliar de conversão e treino)
-- Quantização com `llm.cpp`, `gguf`, `optimum`, ou `mlc-llm`
-- Ferramentas de tradução assistida: Yandex API, LibreTranslate local, pós-edited
+* ✅ Tradução e validação do **Alpaca cleaned**
+* 🔄 Tradução manual em curso do **GPT-4 Self Instruct DE → pt‑PT**
+* 🔜 Geração SQL context-aware
+* 🔜 Quantização local (GGUF int3 / int4)
+* 🔜 Criação de **tokenizer** especializado para português europeu
+
+---
+
+## 📚 Tecnologias Usadas
+
+* **Python** (Pandas, PyArrow, TQDM)
+* **Transformers**, **OpenLLM**, `peft`, `FastAPI`
+* Quantização com `llm.cpp`, `optimum`, `gguf`, `mlc-llm`
+* Tradução assistida com **LibreTranslate**, **Yandex API** + revisão humana
 
 ---
 
 ## 🤝 Contribuições
 
-Este é um projecto **curado manualmente** com muito cuidado e atenção à variante europeia da língua portuguesa.  
-Se queres contribuir:
+Este projeto é feito com **amor, café e ranho técnico**. Se queres contribuir:
 
-- Evita conteúdos em pt-BR
-- Segue o padrão pt-PT
-- Garante que o conteúdo seja realmente **útil e educativo**
-- Pull requests com datasets devem ser justificados e acompanhados de amostra visível
-
----
-
-## 🧠 Autor e Licença
-
-**Autor**: Helder Lopes  
-**Licença**: Apache 2.0 (excepto datasets, sujeitos às suas próprias licenças)
-
-⚠️ **Os datasets completos usados para treinar o GEPETO são privados.**  
-Apenas amostras representativas são incluídas para demonstração da estrutura.
-
+* Garante que todo o conteúdo segue o **pt‑PT** puro
+* Justifica os teus pull requests
+* Inclui **amostras legíveis** para revisão
+* Lembra-te: **isto não é um dataset qualquer** — é o Gepeto.
 
 ---
 
-**AlbertinaLLM** — porque o Português Europeu também merece um LLM de excelência 🇵🇹
+## 🧠 Autor & Licença
+
+**Autor**: Helder Lopes
+**Licença**: Apache 2.0
+
+> ⚠️ *Os datasets principais são privados. Apenas amostras representativas são incluídas.*
+
+---
+
+> ✨ **GEPETO** — Porque o português europeu também merece um LLM que não se verga.
+
+```
