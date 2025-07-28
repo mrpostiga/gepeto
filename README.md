@@ -91,7 +91,7 @@ Se queres contribuir:
 **Autor**: Helder Lopes  
 **Licença**: Apache 2.0 (excepto datasets, sujeitos às suas próprias licenças)
 
-⚠️ **Os datasets completos usados para treinar a AlbertinaLLM são privados.**  
+⚠️ **Os datasets completos usados para treinar o GEPETO são privados.**  
 Apenas amostras representativas são incluídas para demonstração da estrutura.
 
 
