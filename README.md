@@ -1,11 +1,11 @@
-# 🇵🇹 AlbertinaLLM  
+# 🇵🇹 GEPETO  
 Modelos e ferramentas de Inteligência Artificial afinadas para o **Português Europeu** (pt-PT)
 
 ---
 
 ## 🎯 Objectivos do Projecto
 
-AlbertinaLLM é uma LLM cuidadosamente construída com o propósito de:
+GEPETO é uma LLM cuidadosamente construída com o propósito de:
 
 - Suporte nativo e exclusivo para **Português Europeu (pt-PT)**  
 - Capacidade bilingue limitada a **Português (pt-PT)** e **Inglês (EN)**
@@ -89,7 +89,7 @@ Se queres contribuir:
 ## 🧠 Autor e Licença
 
 **Autor**: Helder Lopes  
-**Licença**: MIT (excepto datasets, sujeitos às suas próprias licenças)
+**Licença**: Apache 2.0 (excepto datasets, sujeitos às suas próprias licenças)
 
 ⚠️ **Os datasets completos usados para treinar a AlbertinaLLM são privados.**  
 Apenas amostras representativas são incluídas para demonstração da estrutura.
