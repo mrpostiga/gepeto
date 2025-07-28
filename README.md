@@ -58,6 +58,14 @@ Organizados por diretório:
 
 ---
 
+## 🌍 Sobre variantes linguísticas
+
+O Gepeto é afinado exclusivamente para o **Português Europeu (pt‑PT)**, com **preferência pela norma pré‑Acordo Ortográfico de 1990**.
+
+- ❌ Não inclui suporte para variantes como **PT‑BR**, **PT‑AO**, **PT‑MZ** ou **PT‑AO90**
+- ✅ Todas as instruções, dados e validações são feitas com foco no português de Portugal, tal como ensinado até aos anos 90 e usado em contexto técnico/administrativo
+
+
 ## ⚙️ Estado do Projeto
 
 * ✅ Tradução e validação do **Alpaca cleaned**
