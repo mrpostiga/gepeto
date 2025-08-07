@@ -76,15 +76,6 @@ O Gepeto é afinado exclusivamente para o **Português Europeu (pt‑PT)**, com 
 
 ---
 
-## 📚 Tecnologias Usadas
-
-* **Python** (Pandas, PyArrow, TQDM)
-* **Transformers**, **OpenLLM**, `peft`, `FastAPI`
-* Quantização com `llm.cpp`, `optimum`, `gguf`, `mlc-llm`
-* Tradução assistida com **LibreTranslate**, **Yandex API** + revisão humana
-
----
-
 ## 🤝 Contribuições
 
 Este projeto é feito com **amor, café e ranho técnico**. Se queres contribuir:
